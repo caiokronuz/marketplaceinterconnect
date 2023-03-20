@@ -1,0 +1,901 @@
+.initialPage {
+    width: 100vw;
+    height: 100vh;
+
+    //Landing
+    .landing {
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        background: url('../../public/background.png') no-repeat;
+        background-size: cover;
+
+        h1 {
+            width: 90%;
+            margin-top: 4em;
+            text-align: center;
+            color: #fff;
+            font-size: 1.5em;
+            align-self: center;
+
+            strong {
+                font-weight: bold;
+                color: #3ACF49;
+            }
+        }
+
+        .secondText {
+            margin: 0;
+        }
+
+        .points {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    color: #FFF;
+
+                    svg {
+                        color: #3ACF49;
+                    }
+
+                    strong {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+        }
+
+        button {
+            align-self: center;
+            width: 50%;
+            height: 8%;
+            font-size: 1.1em;
+
+            border: none;
+            border-radius: 3px;
+            background: #3E74FF;
+            color: #FFF;
+        }
+    }
+
+    //Como funciona?
+    .howWorks {
+        width: 100%;
+        height: 100vh;
+        padding: 5%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        background-color: #FFF;
+
+        h1 {
+            color: #3ACF49;
+            font-weight: bold;
+        }
+
+        .container {
+
+            width: 100%;
+            height: 80%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+            iframe {
+                width: 80%;
+                height: 30%;
+            }
+
+            .explanation {
+                width: 85%;
+                height: 35%;
+
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+
+                margin-top: 2.5em;
+
+                p {
+                    text-align: center;
+                    margin-top: 1em;
+                    font-size: 1.05em;
+                }
+
+                p:hover {
+                    color: #3ACF49;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        button {
+            width: 50%;
+            height: 8%;
+            border-radius: 3%;
+            border: none;
+
+            background-color: #3ACF49;
+            color: #FFF;
+            font-size: 1em;
+        }
+
+    }
+
+    //Passos
+    .steps {
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        background-color: #D9D9D9;
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            color: #3E74FF;
+        }
+
+        .container {
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .step {
+                width: 80%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s;
+
+                text-align: center;
+
+                span {
+                    font-size: 4em;
+                    font-weight: bold;
+                    color: #3E74FF;
+                }
+
+                hr {
+                    width: 15%;
+                    border-color: #3ACF49;
+                    background: #3ACF49;
+                }
+
+                p {
+                    margin-top: 0.5em;
+                    text-align: center;
+                }
+            }
+
+            .step:hover {
+                transform: scale(1.05);
+            }
+        }
+
+    }
+
+    //Perguntas frequentes
+    .commonQuestions {
+        width: 100%;
+        height: auto;
+        min-height: 50vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin: 2em 0 20% 0;
+            font-weight: bold;
+            color: #3ACF49;
+        }
+
+        .questionsComponent {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .questionComponent {
+                width: 80%;
+                margin-bottom: 1em;
+                cursor: pointer;
+
+                background-color: #D9D9D9;
+                padding: 1em;
+
+                .question {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h1 {
+                        margin: 0;
+                        font-size: 1.5em;
+                    }
+                }
+
+                .response {
+                    margin-top: 1em;
+                }
+            }
+        }
+
+
+    }
+
+    //Contato
+    .contact {
+        width: 100%;
+        height: auto;
+        min-height: 50vh;
+        //background-color: #D9D9D9;
+        margin-top: 3em;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        h1 {
+            margin: 0 0 1em 0;
+            color: #3E74FF;
+            font-weight: bold;
+        }
+
+        p {
+            width: 80%;
+            margin: 2em 0 2em 0;
+            text-align: center;
+        }
+
+        .whatsAppButton {
+            margin: 2em 0 8em 0;
+            width: 70%;
+            height: 10vh;
+            padding: 1em;
+            text-align: left;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: none;
+            border-radius: 3%;
+            background-color: #3ACF49;
+
+            p {
+                width: 100%;
+                margin-left: 0.5em;
+                color: #FFF;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+//MEDIA QUERIES
+
+//Adaptação por Width:
+
+//Adaptação para PC e dispositivos com width acima de 1025px
+@media(min-width: 1025px) {
+    .initialPage {
+
+        button {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        //Landing
+        .landing {
+
+            .points {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                div {
+                    span {
+                        color: #FFF;
+                        font-size: 1.3em;
+                    }
+                }
+
+            }
+
+            button {
+                width: 15%;
+            }
+
+        }
+
+        //Como funciona?
+        .howWorks {
+            h1 {
+                color: #3ACF49;
+                font-weight: bold;
+            }
+
+            .container {
+
+                justify-content: space-evenly;
+                flex-direction: row;
+                width: 90%;
+
+
+                iframe {
+                    width: 30%;
+                    height: 60%;
+                }
+
+                .explanation {
+                    width: 30%;
+                    height: 35%;
+                    margin: 0;
+                    transition: all 0.3s;
+
+                    p {
+                        margin-top: 1em;
+                    }
+                }
+            }
+
+            button {
+                width: 12%;
+                height: 10%;
+                padding: 1%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        //Passos
+        .steps {
+
+            .container {
+                width: 80%;
+                //height: 80%;
+
+                flex-direction: row;
+
+                .step {
+                    width: 30%;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    p {
+                        width: 70%;
+                    }
+                }
+
+                .step:hover {
+                    transform: scale(1.5);
+                }
+
+
+            }
+
+        }
+
+        //Perguntas frequentes
+        .commonQuestions {
+
+            h1 {
+                margin-bottom: 2em;
+            }
+
+            .questionsComponent {
+                margin-bottom: 2em;
+
+                .questionComponent {
+                    width: 40%;
+                }
+            }
+        }
+
+        //Contato
+        .contact {
+            .whatsAppButton {
+                width: 20%;
+                transition: all 0.3s;
+            }
+
+            .whatsAppButton:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+}
+
+//Adaptação para dispositivos com width minimo de 820px
+@media(min-width: 820px) {
+    .initialPage {
+
+        //Como funciona?
+        .howWorks {
+            .container {
+                .explanation {
+                    margin-top: 2em;
+                }
+            }
+        }
+
+        //Passos
+        .steps {
+            h1 {
+                font-size: 2.5em;
+                width: 90%;
+            }
+
+            .container {
+                .step {
+                    span {
+                        font-size: 5em;
+                    }
+
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+
+                .step:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+        }
+
+        //Perguntas frequentes
+        .commonQuestions {
+            h1 {
+                margin-bottom: 4em;
+            }
+
+            .questionsComponent {
+                .questionComponent {
+                    .question {
+                        h1 {
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+//Adaptação para dispositivos com width minimo de 768px
+@media(min-width: 768px) {
+    .initialPage {
+
+        //Landing
+        .landing {
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .points {
+                div {
+                    span {
+                        font-size: 1.6em;
+                    }
+                }
+
+            }
+
+            button {
+                width: 30%;
+                font-size: 1.3em;
+            }
+
+        }
+
+
+        //Como funciona?
+        .howWorks {
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .container {
+
+                iframe {
+                    width: 60%;
+                    height: 40%;
+                }
+
+                .explanation {
+                    margin-top: 4.5em;
+                    margin-bottom: 2em;
+
+                    p {
+                        font-size: 1.4em;
+                    }
+                }
+            }
+
+            button {
+                width: 35%;
+                font-size: 1.4em;
+            }
+
+        }
+
+        //Passos
+        .steps {
+            h1 {
+                font-size: 2.5em;
+                width: 90%;
+            }
+
+            .container {
+                .step {
+                    span {
+                        font-size: 5em;
+                    }
+
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+
+                .step:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+        }
+
+        //Perguntas frequentes
+        .commonQuestions {
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: 2em;
+            }
+
+            .questionsComponent {
+                .questionComponent {
+                    width: 70%;
+
+                    .question {
+                        h1 {
+                            font-size: 1.8em;
+                        }
+                    }
+                }
+            }
+        }
+
+        //Contato
+        .contact {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.5em;
+            }
+
+            .whatsAppButton {
+                width: 50%;
+            }
+        }
+    }
+}
+
+//Adaptação para dispositivos com heigth minimo de 912px
+@media(min-width: 912px) {
+    .initialPage {
+        //Landing
+        .landing {
+            .points {
+                div {
+                    span {
+                        font-size: 1.8em;
+                    }
+                }
+            }
+
+            button {
+                width: 40%;
+                font-size: 1.5em;
+            }
+        }
+
+        //Como funciona?
+        .howWorks {
+            .container {
+                iframe {
+                    width: 60%;
+                    height: 40%;
+                }
+
+                .explanation {
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            button {
+                width: 50%;
+                font-size: 1.5em;
+            }
+
+        }
+
+        //Passos
+        .steps {
+            .container {
+                .step {
+                    span {
+                        font-size: 5em;
+                    }
+
+                    h1{
+                        font-size: 2.5em;
+                    }
+
+                    p {
+                        font-size: 1.7em;
+                    }
+                }
+            }
+
+        }
+
+        //Perguntas frequentes
+        .commonQuestions {
+            .questionsComponent {
+                .questionComponent {
+                    .question {
+                        h1 {
+                            font-size: 1.8em;
+                        }
+                    }
+
+                    .response {
+                        p{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        //Contato
+        .contact {
+            .whatsAppButton {
+               width: 50%;
+               p{
+                    font-size: 1.6em;
+               }
+            }
+        }
+    }
+
+}
+
+
+//Adaptação por Heigth:
+
+//Adaptação para dispositivos com heigth maximo de 667px
+@media(max-height: 667px) {
+    .initialPage {
+
+        .landing {
+            h1 {
+                font-size: 1.3em;
+            }
+        }
+
+        //Como funciona?
+        .howWorks {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .container {
+                .explanation {
+                    p {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+
+        //Passos
+        .steps {
+            padding: 5%;
+            background-color: #D9D9D9;
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+
+            .container {
+                .step {
+                    span {
+                        font-size: 2.5em;
+                    }
+
+                    h1 {
+                        font-size: 1.2em;
+                    }
+
+                    p {
+                        font-size: 0.9em;
+                    }
+                }
+
+                .step:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+        }
+
+        //Perguntas frequentes
+        .commonQuestions {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .questionsComponent {
+                .questionComponent {
+                    .question {
+                        h1 {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        //Contato
+        .contact {
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+//Adaptação para dispositivos com heigth máximo de 740px
+@media(max-height: 740px) {
+    .initialPage {
+
+        //Landing
+        .landing {
+            h1 {
+                font-size: 1.3em;
+            }
+        }
+
+        //Como funciona?
+        .howWorks {
+            h1 {
+                font-size: 1.4em;
+            }
+
+            .container {
+                .explanation {
+                    p {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+
+        //Passos
+        .steps {
+            h1 {
+                font-size: 1.4em;
+            }
+
+            .container {
+                .step {
+                    p {
+                        font-size: 0.9em;
+                    }
+
+                    h1 {
+                        font-size: 1.3em;
+                    }
+                }
+
+                .step:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+        }
+
+        //Perguntas frequentes
+        .commonQuestions {
+            h1 {
+                font-size: 1.4em;
+            }
+
+            .questionsComponent {
+                .questionComponent {
+                    .question {
+                        h1 {
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+
+        //Contato
+        .contact {
+            h1 {
+                font-size: 1.4em;
+            }
+
+            .whatsAppButton {
+                margin-bottom: 5em;
+                width: 70%;
+
+                p {
+                    font-size: 0.95em;
+                }
+            }
+        }
+    }
+}

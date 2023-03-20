@@ -1,0 +1,130 @@
+//Rodapé
+.footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 50%;
+            height: 30%;
+            margin-top: 1em;
+        }
+
+        p {
+            text-align: center;
+            color: #FFF;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h1,
+            a {
+                color: #fff;
+                margin: 0;
+                padding: 0;
+            }
+
+            a:last-child {
+                margin-bottom: 2em;
+            }
+        }
+    }
+}
+
+//MEDIA QUERIES
+
+//Adaptação por Width:
+
+//Adaptação para dispositivos com width acima de 1025px
+@media(min-width: 1025px) {
+
+    //Rodapé
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .top {
+            width: 50%;
+            img {
+                width: 20%;
+                height: 30%;
+            }
+
+            p {
+                width: 50%;
+            }
+        }
+
+        .container {
+            width: 50%;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .social {
+                a{
+                    transition: all 0.3s;
+                }
+
+                a:last-child {
+                    margin-bottom: 0em;
+                }
+
+                a:hover{
+                    color: #3ACF49;
+                }
+            }
+        }
+    }
+}
+
+//Adaptação para dispositivos com width minimo de 768px
+@media(min-width: 768px){
+    .footer{
+        .top{
+            img{
+                width: 35%;
+            }
+        }
+
+        .container{
+            .social{
+                a{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+//Adaptação por Heigth:
+
+//Adaptação para dispositivos com heigth máximo de 667px
+@media(max-height: 667px){
+    .footer {    
+        .top {    
+            img {
+                width: 40%;
+            }
+
+            p{
+                font-size: 0.9em;
+            }
+        }
+    }
+}
