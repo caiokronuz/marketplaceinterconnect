@@ -2,6 +2,13 @@
     width: 100vw;
     height: 100vh;
 
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     //Landing
     .landing {
         width: 100vw;
@@ -58,10 +65,10 @@
 
         }
 
-        button {
+        .link {
             align-self: center;
             width: 50%;
-            height: 8%;
+            height: 7.5%;
             font-size: 1.1em;
 
             border: none;
@@ -129,11 +136,12 @@
             }
         }
 
-        button {
+        a {
             width: 50%;
             height: 8%;
             border-radius: 3%;
             border: none;
+            padding: 2%;
 
             background-color: #3ACF49;
             color: #FFF;
@@ -309,36 +317,26 @@
 //MEDIA QUERIES
 
 //Celular
-@media (max-width: 599px){
-    .initialPage{
-     
-    }
+@media (max-width: 599px) {
+    .initialPage {}
 }
 
 //Tablet pequeno
-@media(min-width: 600px){
-    .initialPage{
-
-    }
+@media(min-width: 600px) {
+    .initialPage {}
 }
 
 //Tablet grande
-@media(min-width: 900px){
-    .initialPage{
-
-    }
+@media(min-width: 900px) {
+    .initialPage {}
 }
 
 //Desktop
-@media(min-width: 1200px){
-    .initialPage{
-
-    }
+@media(min-width: 1200px) {
+    .initialPage {}
 }
 
 //Desktop grande
-@media(min-width: 1800px){
-    .initialPage{
-
-    }
+@media(min-width: 1800px) {
+    .initialPage {}
 }

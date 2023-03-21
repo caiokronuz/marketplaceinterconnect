@@ -1,0 +1,35 @@
+.marketPlace{
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(#3ACF49, #3E74FF);
+
+    .page{
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: url('../../public/background.png') no-repeat;
+        background-size: cover;
+
+        .container{
+            background: rgba(0,0,0,0.5);
+
+            width: 90%;
+            margin-top: 8em;
+            .quotas{
+                .solarPlant{
+                    header{
+                        img{
+                            width: 20%;
+                            height: 20%
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}

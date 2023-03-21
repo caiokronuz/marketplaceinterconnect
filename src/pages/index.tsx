@@ -24,9 +24,6 @@ export default function Home() {
   const [questionTwoIsOpen, setQuestionTwoIsOpen] = useState(false);
   const [questionThreeIsOpen, setQuestionThreeIsOpen] = useState(false);
 
-  //Estado do dropdown do Menu
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <main className={styles.initialPage}>
 
@@ -52,7 +49,7 @@ export default function Home() {
 
         <h1 className={styles.secondText}>O <strong>meio ambiente mais limpo</strong> e sua <strong>energia mais barata</strong></h1>
 
-        <button>Quero economizar</button>
+        <Link href="/send" className={styles.link}>Quero economizar</Link>
 
       </div>
 
@@ -75,7 +72,7 @@ export default function Home() {
 
         </div>
 
-        <button>Escolha o melhor plano para você</button>
+        <Link href="/marketplace">Escolha o melhor plano para você</Link>
 
       </div>
 
