@@ -12,7 +12,7 @@ export function Footer() {
             <footer className={styles.footer}>
                 <div className={styles.top}>
                     <Image src={logo} alt="Logo da empresa Deletrica Interconnect" />
-                    <p>A solução ideal para você economizar dinheiro com energia solar sem obras, sem burocracia e sem investir.</p>
+                    <p className={styles.description}>A solução ideal para você economizar dinheiro com energia solar sem obras, sem burocracia e sem investir.</p>
                 </div>
 
                 <div className={styles.container}>
