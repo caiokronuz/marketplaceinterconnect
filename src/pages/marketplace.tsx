@@ -20,12 +20,11 @@ export default function marketPlace(){
                     </form>
 
                     <div className={styles.quotas}>
-
                         <div className={styles.solarPlant}>
                             <header>
                                 <Image src={solarPlant} alt="Foto da usina"/>
                             </header>
-                            <div>
+                            <div className={styles.description}>
                                 <h1 className={styles.title}>Cotas Disponíveis</h1>
                                 <span className={styles.amountQuotes}>3 cotas</span>
                                 <hr/>
@@ -40,8 +39,96 @@ export default function marketPlace(){
                                 <button>ASSINAR</button>
                             </div>
                         </div>
-                        
                     </div>
+
+                    <div className={styles.quotas}>
+                        <div className={styles.solarPlant}>
+                            <header>
+                                <Image src={solarPlant} alt="Foto da usina"/>
+                            </header>
+                            <div className={styles.description}>
+                                <h1 className={styles.title}>Cotas Disponíveis</h1>
+                                <span className={styles.amountQuotes}>3 cotas</span>
+                                <hr/>
+                                <h1 className={styles.amountEnergy}>5.000 kWh</h1>
+
+                                <div className={styles.amountControl}>
+                                    <span>+</span>
+                                    <span>(1 Cota)</span>
+                                    <span>-</span>
+                                </div>
+
+                                <button>ASSINAR</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.quotas}>
+                        <div className={styles.solarPlant}>
+                            <header>
+                                <Image src={solarPlant} alt="Foto da usina"/>
+                            </header>
+                            <div className={styles.description}>
+                                <h1 className={styles.title}>Cotas Disponíveis</h1>
+                                <span className={styles.amountQuotes}>3 cotas</span>
+                                <hr/>
+                                <h1 className={styles.amountEnergy}>5.000 kWh</h1>
+
+                                <div className={styles.amountControl}>
+                                    <span>+</span>
+                                    <span>(1 Cota)</span>
+                                    <span>-</span>
+                                </div>
+
+                                <button>ASSINAR</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.quotas}>
+                        <div className={styles.solarPlant}>
+                            <header>
+                                <Image src={solarPlant} alt="Foto da usina"/>
+                            </header>
+                            <div className={styles.description}>
+                                <h1 className={styles.title}>Cotas Disponíveis</h1>
+                                <span className={styles.amountQuotes}>3 cotas</span>
+                                <hr/>
+                                <h1 className={styles.amountEnergy}>5.000 kWh</h1>
+
+                                <div className={styles.amountControl}>
+                                    <span>+</span>
+                                    <span>(1 Cota)</span>
+                                    <span>-</span>
+                                </div>
+
+                                <button>ASSINAR</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.quotas}>
+                        <div className={styles.solarPlant}>
+                            <header>
+                                <Image src={solarPlant} alt="Foto da usina"/>
+                            </header>
+                            <div className={styles.description}>
+                                <h1 className={styles.title}>Cotas Disponíveis</h1>
+                                <span className={styles.amountQuotes}>3 cotas</span>
+                                <hr/>
+                                <h1 className={styles.amountEnergy}>5.000 kWh</h1>
+
+                                <div className={styles.amountControl}>
+                                    <span>+</span>
+                                    <span>(1 Cota)</span>
+                                    <span>-</span>
+                                </div>
+
+                                <button>ASSINAR</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <Footer />

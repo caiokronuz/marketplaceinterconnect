@@ -22,11 +22,11 @@ export function Header() {
                 <nav className={styles.menu}>
                     <ul>
                         <li className={styles.closeButton}><AiFillCloseCircle size={30} onClick={() => setIsMenuOpen(!isMenuOpen)} /></li>
-                        <li><a href="#landing">Início</a></li>
-                        <li><a href="#howWorks">Como funciona?</a></li>
+                        <li><a href="/#landing">Início</a></li>
+                        <li><a href="/#howWorks">Como funciona?</a></li>
                         <li><Link href="/marketplace">Planos</Link></li>
-                        <li><a href="#commonQuestions">Perguntas frequentes</a></li>
-                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="/#commonQuestions">Perguntas frequentes</a></li>
+                        <li><a href="/#contact">Contato</a></li>
                         <li className={styles.sign}><Link href="/send">Assinar</Link></li>
                     </ul>
                 </nav>
@@ -39,12 +39,12 @@ export function Header() {
                     <nav className={styles.menu}>
                         <ul>
                             <li className={styles.closeButton}><AiFillCloseCircle size={30} onClick={() => setIsMenuOpen(!isMenuOpen)} /></li>
-                            <li><a href="#landing">Início</a></li>
-                            <li><a href="#howWorks">Como funciona?</a></li>
-                            <li><Link href="/">Planos</Link></li>
-                            <li><a href="#commonQuestions">Perguntas frequentes</a></li>
-                            <li><a href="#contact">Contato</a></li>
-                            <li className={styles.sign}><Link href="/">Assinar</Link></li>
+                            <li><a href="/#landing">Início</a></li>
+                            <li><a href="/#howWorks">Como funciona?</a></li>
+                            <li><Link href="/marketplace">Planos</Link></li>
+                            <li><a href="/#commonQuestions">Perguntas frequentes</a></li>
+                            <li><a href="/#contact">Contato</a></li>
+                            <li className={styles.sign}><Link href="/send">Assinar</Link></li>
                         </ul>
                     </nav>
                 </div>
