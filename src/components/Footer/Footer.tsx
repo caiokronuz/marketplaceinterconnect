@@ -17,24 +17,24 @@ export function Footer() {
 
                 <div className={styles.container}>
                     <div className={styles.social}>
-                        <h1>CONHEÇA</h1>
-                        <a href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
-                        <a href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
-                        <a href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
+                        <h1 className={styles.title}>CONHEÇA</h1>
+                        <a className={styles.link} href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
+                        <a className={styles.link} href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
+                        <a className={styles.link} href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
                     </div>
 
                     <div className={styles.social}>
-                        <h1>SOCIAL</h1>
-                        <a href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
-                        <a href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
-                        <a href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
+                        <h1 className={styles.title}>SOCIAL</h1>
+                        <a className={styles.link} href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
+                        <a className={styles.link} href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
+                        <a className={styles.link} href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
                     </div>
 
                     <div className={styles.social}>
-                        <h1>CONTATO</h1>
-                        <a href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
-                        <a href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
-                        <a href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
+                        <h1 className={styles.title}>CONTATO</h1>
+                        <a className={styles.link} href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
+                        <a className={styles.link} href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
+                        <a className={styles.link} href="https://google.com" rel="noopener noreferrer">Lorem Ipsum</a>
                     </div>
                 </div>
             </footer>

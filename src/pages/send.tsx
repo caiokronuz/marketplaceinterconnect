@@ -17,9 +17,9 @@ export default function sendPage() {
                 </div>
                 <form className={styles.forms}>
                     <label htmlFor="name">Nome*</label>
-                    <input type="text" id="name"/>
-                    <label htmlFor="contact">Contato*</label>
-                    <input type="text" id="contact"/>
+                    <input type="text" id="name" placeholder="Fulano da Silva"/>
+                    <label htmlFor="contact">Telefone*</label>
+                    <input type="text" id="contact" placeholder="(85) 99999-9999)"/>
                     <label htmlFor="bill">Conta de energia*</label>
                     <input type="file" id="bill"/>
                     <button type="submit">Quero economizar</button>

@@ -65,13 +65,27 @@
 //MEDIA QUERIES
 
 //Celular
+@media(max-height: 667px){
+    .header{
+        img{
+            width: 30%;
+            height: 50%;
+        }
+    }
+}
+
 @media (max-width: 599px) {
     
 }
 
 //Tablet pequeno
 @media(min-width: 600px) {
-    
+    .header{    
+        img{
+            width: 30%;
+            height: 50%;
+        }
+    }
 }
 
 //Tablet grande

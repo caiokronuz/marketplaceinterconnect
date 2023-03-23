@@ -65,7 +65,7 @@ export default function Home() {
 
           <div className={styles.explanation}>
             <p>A Interconnect conecta você a usinas de energia solar na sua região.</p>
-            <p>Você não precisa instalar painéis solares ou fazer qualquer obra. Tudo é feito 100% online e sem fidelidade ou multa</p>
+            <p>Você não precisa instalar painéis solares ou fazer qualquer obra. Tudo é feito 100% online e sem fidelidade</p>
             <p>A gente produz energia mais barata e a distribuidora da sua região segue responsável pela entrega.</p>
             <p>Você passa a pagar a energia que consome diretamente à usina, e, nós cuidaremos da fatura da distribuidora.</p>
           </div>
