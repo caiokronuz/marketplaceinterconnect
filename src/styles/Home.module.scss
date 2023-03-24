@@ -324,126 +324,7 @@
 //MEDIA QUERIES
 
 //Celular 
-@media(max-width: 280px) {
-    .initialPage {
 
-        //Landing
-        .landing {
-            h1 {
-                font-size: 1em;
-            }
-
-            .points {
-
-                div {
-                    display: flex;
-                    flex-direction: column;
-
-                    span {
-                        font-size: 0.8em;
-                    }
-                }
-
-            }
-
-            .link {
-                font-size: 0.8em;
-            }
-        }
-
-        //Como funciona?
-        .howWorks {
-            h1 {
-                font-size: 1.2em;
-            }
-
-            .container {
-
-                .explanation {
-                    margin-top: 4em;
-
-                    p {
-                        font-size: 0.8em;
-                    }
-                }
-            }
-
-            a {
-                margin-top: 1em;
-                font-size: 0.8em;
-            }
-
-        }
-
-        //Passos
-        .steps {
-            h1 {
-                font-size: 1.2em;
-            }
-
-            .container {
-                .step {
-                    span {
-                        font-size: 2.5em;
-                    }
-
-                    p {
-                        font-size: 0.8em
-                    }
-                }
-
-                .step:hover {
-                    transform: scale(1.05);
-                }
-            }
-
-        }
-
-        //Perguntas frequentes
-        .commonQuestions {
-            h1 {
-                font-size: 1.2em;
-            }
-
-            .questionsComponent {
-                .questionComponent {
-                    .question {
-                        h1 {
-                            font-size: 1em;
-                        }
-                    }
-
-                    .response {
-                        p {
-                            font-size: 0.8em;
-                        }
-                    }
-                }
-            }
-
-
-        }
-
-        //Contato
-        .contact {
-            h1 {
-                font-size: 1.2em;
-            }
-
-            p {
-                font-size: 0.8em;
-            }
-
-            .whatsAppButton {
-                width: 80%;
-
-                p {
-                    font-size: 0.8em;
-                }
-            }
-        }
-    }
-}
 
 @media(max-width: 360px) {
     .initialPage {
@@ -668,56 +549,499 @@
             }
         }
     }
+
+    @media(max-width: 280px) {
+        .initialPage {
+
+            //Landing
+            .landing {
+                h1 {
+                    font-size: 1em;
+                }
+
+                .points {
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            font-size: 0.8em;
+                        }
+                    }
+
+                }
+
+                .link {
+                    font-size: 0.8em;
+                }
+            }
+
+            //Como funciona?
+            .howWorks {
+                h1 {
+                    font-size: 1.2em;
+                }
+
+                .container {
+
+                    .explanation {
+                        margin-top: 4em;
+
+                        p {
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+
+                a {
+                    margin-top: 1em;
+                    font-size: 0.8em;
+                }
+
+            }
+
+            //Passos
+            .steps {
+                h1 {
+                    font-size: 1.2em;
+                }
+
+                .container {
+                    .step {
+                        span {
+                            font-size: 2.5em;
+                        }
+
+                        p {
+                            font-size: 0.8em
+                        }
+                    }
+
+                    .step:hover {
+                        transform: scale(1.05);
+                    }
+                }
+
+            }
+
+            //Perguntas frequentes
+            .commonQuestions {
+                h1 {
+                    font-size: 1.2em;
+                }
+
+                .questionsComponent {
+                    .questionComponent {
+                        .question {
+                            h1 {
+                                font-size: 1em;
+                            }
+                        }
+
+                        .response {
+                            p {
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+            //Contato
+            .contact {
+                h1 {
+                    font-size: 1.2em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                }
+
+                .whatsAppButton {
+                    width: 80%;
+
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+    }
 }
 
-@media(max-width: 540px) {
+@media(min-width: 540px) {
     .initialPage {
+
         //Landing
         .landing {
             h1 {
                 font-size: 1.4em;
             }
-    
-            .secondText {
-                margin: 0;
+
+            .link {
+                font-size: 0.9em;
+                width: 30%;
             }
-    
-            .points {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-    
-    
-                div {
-                    display: flex;
-                    flex-direction: column;
-    
+        }
+
+        //Como funciona?
+        .howWorks {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .container {
+                iframe {
+                    height: 50%;
+                }
+
+                .explanation {
+                    p {
+                        font-size: 0.9em;
+                        width: 90%;
+                    }
+                }
+            }
+
+            a {
+                font-size: 0.9em;
+                width: 35%;
+                margin-top: 2em;
+            }
+
+        }
+
+        //Passos
+        .steps {
+            h1 {
+                font-size: 1.4em;
+                width: 80%;
+            }
+
+            .container {
+                .step {
+                    margin-top: 1em;
+
                     span {
-                        color: #FFF;
-    
-                        svg {
-                            color: #3ACF49;
+                        font-size: 3.5em;
+                    }
+
+                    p {
+                        font-size: 0.9em;
+                        width: 80%;
+                    }
+                }
+
+                .step:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+        }
+
+        //Perguntas frequentes
+        .commonQuestions {
+            h1 {
+                font-size: 1.4em;
+                margin-bottom: 3em;
+            }
+
+            .questionsComponent {
+                .questionComponent {
+                    .question {
+                        h1 {
+                            font-size: 1.2em;
                         }
-    
-                        strong {
-                            font-weight: bold;
+                    }
+
+                    .response {
+                        p {
+                            font-size: 0.9em;
                         }
+                    }
+                }
+            }
+
+
+        }
+
+        //Contato
+        .contact {
+            h1 {
+                font-size: 1.4em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .whatsAppButton {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media(max-width: 599px) {}
+
+//Tablet pequeno
+@media(min-width: 600px) {
+    .initialPage {
+
+        //Landing
+        .landing {
+            h1 {
+                font-size: 1.85em;
+            }
+
+            .points {
+                div {
+                    span {
+                        font-size: 1.4em;
+                    }
+                }
+
+            }
+
+            .link {
+                font-size: 1.4em;
+                width: 30%;
+            }
+        }
+
+        //Como funciona?
+        .howWorks {
+            h1 {
+                font-size: 1.90em;
+            }
+
+            .container {
+                iframe {
+                    width: 80%;
+                    height: 40%;
+                }
+
+                .explanation {
+                    p {
+                        font-size: 1.4em;
+                    }
+                }
+            }
+
+            a {
+                font-size: 1.4em;
+                width: 35%;
+            }
+
+        }
+
+        //Passos
+        .steps {
+            h1 {
+                font-size: 1.90em;
+            }
+
+            .container {
+                .step {
+                    margin-top: 1em;
+
+                    p {
+                        font-size: 1.4em;
+                        width: 70%;
+                    }
+                }
+            }
+
+        }
+
+        //Perguntas frequentes
+        .commonQuestions {
+            h1 {
+                font-size: 1.90em;
+                margin-bottom: 3em;
+            }
+
+            .questionsComponent {
+                .questionComponent {
+                    width: 70%;
+
+                    .question {
+                        h1 {
+                            font-size: 1.5em;
+                        }
+                    }
+
+                    .response {
+                        p {
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        //Contato
+        .contact {
+            h1 {
+                font-size: 1.90em;
+            }
+
+            p {
+                font-size: 1.4em;
+            }
+
+            .whatsAppButton {
+                width: 50%;
+            }
+        }
+    }
+}
+
+//Tablet grande
+@media(min-width: 900px) {
+    .initialPage {
+
+        //Landing
+        .landing {
+            h1 {
+                font-size: 2.25em;
+            }
+
+            .points {
+                div {
+
+                    span {
+                        font-size: 1.90em;
+                    }
+                }
+
+            }
+
+            .link {
+                font-size: 1.5em;
+                width: 35%;
+            }
+        }
+
+        //Como funciona?
+        .howWorks {
+            h1 {
+                font-size: 2.25em;
+            }
+
+            .container {
+
+                iframe {
+                    height: 40%;
+                }
+
+                .explanation {
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            a {
+                font-size: 1.5em;
+            }
+
+        }
+
+        //Passos
+        .steps {
+            h1 {
+                font-size: 2.25em;
+            }
+
+            .container {
+                .step {
+                    margin-top: 1.5em;
+
+                    span {
+                        font-size: 5em;
+                    }
+
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+        }
+
+        //Perguntas frequentes
+        .commonQuestions {
+            h1 {
+                margin-bottom: 4em;
+                font-size: 2.25em;
+            }
+
+            .questionsComponent {
+                .questionComponent {
+                    width: 70%;
+
+                    .question {
+                        h1 {
+                            font-size: 1.9em;
+                        }
+                    }
+
+                    .response {
+                        p {
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        //Contato
+        .contact {
+            h1 {
+                font-size: 2.25em;
+            }
+
+            p {
+                font-size: 1.5em;
+            }
+
+            .whatsAppButton {
+                p {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px){
+    .initialPage {
+        //Landing
+        .landing {
+            h1 {
+                font-size: 1.3em;
+            }
+
+            .points {
+                div {
+                    span{
+                        font-size: 1em;
                     }
                 }
     
             }
     
             .link {
-                align-self: center;
-                width: 50%;
-                height: 7.5%;
-                font-size: 1.1em;
-    
-                border: none;
-                border-radius: 3px;
-                background: #3E74FF;
-                color: #FFF;
+              font-size: 1em;
+              width: 25%;
             }
         }
     
@@ -952,236 +1276,6 @@
                     margin-left: 0.5em;
                     color: #FFF;
                     text-align: left;
-                }
-            }
-        }
-    }
-}
-
-@media(max-width: 599px) {}
-
-//Tablet pequeno
-@media(min-width: 600px) {
-    .initialPage {
-
-        //Landing
-        .landing {
-            h1 {
-                font-size: 1.85em;
-            }
-
-            .points {
-                div {
-                    span {
-                        font-size: 1.4em;
-                    }
-                }
-
-            }
-
-            .link {
-                font-size: 1.4em;
-                width: 30%;
-            }
-        }
-
-        //Como funciona?
-        .howWorks {
-            h1 {
-                font-size: 1.90em;
-            }
-
-            .container {
-                iframe {
-                    width: 80%;
-                    height: 40%;
-                }
-
-                .explanation {
-                    p {
-                        font-size: 1.4em;
-                    }
-                }
-            }
-
-            a {
-                font-size: 1.4em;
-                width: 35%;
-            }
-
-        }
-
-        //Passos
-        .steps {
-            h1 {
-                font-size: 1.90em;
-            }
-
-            .container {
-                .step {
-                    margin-top: 1em;
-
-                    p {
-                        font-size: 1.4em;
-                        width: 70%;
-                    }
-                }
-            }
-
-        }
-
-        //Perguntas frequentes
-        .commonQuestions {
-            h1 {
-                font-size: 1.90em;
-                margin-bottom: 3em;
-            }
-
-            .questionsComponent {
-                .questionComponent {
-                    width: 70%;
-
-                    .response {
-                        p {
-                            font-size: 1.4em;
-                        }
-                    }
-                }
-            }
-
-
-        }
-
-        //Contato
-        .contact {
-            h1 {
-                font-size: 1.90em;
-            }
-
-            p {
-                font-size: 1.4em;
-            }
-
-            .whatsAppButton {
-                width: 50%;
-            }
-        }
-    }
-}
-
-//Tablet grande
-@media(min-width: 900px) {
-    .initialPage {
-
-        //Landing
-        .landing {
-            h1 {
-                font-size: 2.25em;
-            }
-
-            .points {
-                div {
-
-                    span {
-                        font-size: 1.90em;
-                    }
-                }
-
-            }
-
-            .link {
-                font-size: 1.5em;
-                width: 35%;
-            }
-        }
-
-        //Como funciona?
-        .howWorks {
-            h1 {
-                font-size: 2.25em;
-            }
-
-            .container {
-
-                iframe {
-                    height: 40%;
-                }
-
-                .explanation {
-                    p {
-                        font-size: 1.5em;
-                    }
-                }
-            }
-
-            a {
-                font-size: 1.5em;
-            }
-
-        }
-
-        //Passos
-        .steps {
-            h1 {
-                font-size: 2.25em;
-            }
-
-            .container {
-                .step {
-                    margin-top: 1.5em;
-
-                    span {
-                        font-size: 5em;
-                    }
-
-                    p {
-                        font-size: 1.5em;
-                    }
-                }
-            }
-
-        }
-
-        //Perguntas frequentes
-        .commonQuestions {
-            h1 {
-                margin-bottom: 4em;
-                font-size: 2.25em;
-            }
-
-            .questionsComponent {
-                .questionComponent {
-                    width: 70%;
-                    .question {
-                        h1 {
-                            font-size: 1.9em;
-                        }
-                    }
-
-                    .response {
-                        p{
-                            font-size: 1.5em;
-                        }
-                    }
-                }
-            }
-
-
-        }
-
-        //Contato
-        .contact {
-            h1 {
-                font-size: 2.25em;
-            }
-
-            p {
-               font-size: 1.5em;
-            }
-
-            .whatsAppButton {
-                p {
-                    font-size: 1.5em;
                 }
             }
         }

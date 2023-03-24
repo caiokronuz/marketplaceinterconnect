@@ -50,8 +50,30 @@
 //MEDIA QUERIES
 
 //Celular
-@media (max-width: 599px) {
+@media(max-width: 599px) {
     
+}
+
+@media(min-width: 540px){
+    .footer{
+        .top{
+            img{
+                width: 30%;
+            }
+        }
+
+        .container{
+            .social{
+                .title{
+                    font-size: 1.4em;
+                }
+
+                .link{
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
 }
 
 @media(max-height: 667px){
