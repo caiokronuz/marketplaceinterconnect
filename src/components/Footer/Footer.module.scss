@@ -128,6 +128,30 @@
     
 }
 
+@media(min-width: 1024px){
+    //Rodapé
+.footer {
+    .top {
+        img {
+            width: 20%;
+            height: 30%;
+        }
+    }
+
+    .container {
+        .social {
+            .title{
+                font-size: 1.5em;
+            }
+
+            .link{
+                font-size: 1em;
+            }
+        }
+    }
+}
+}
+
 //Desktop
 @media(min-width: 1200px) {
     .footer {

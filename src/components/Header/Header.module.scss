@@ -97,6 +97,15 @@
 //Tablet grande
 @media(min-width: 900px) {}
 
+@media(min-width: 1024px){
+    .header {
+        img {
+            width: 15%;
+            height: 70%;
+        }
+    }
+}
+
 //Desktop
 @media(min-width: 1200px) {
     .header {
