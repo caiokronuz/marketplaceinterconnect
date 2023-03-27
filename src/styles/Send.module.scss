@@ -1,20 +1,24 @@
-.sendPage{
+.sendPage {
     width: 100vw;
     height: auto;
     background: linear-gradient(#3ACF49, #3E74FF);
 
+    p {
+        margin: 1em 0 1em 0;
+    }
 
-    .container{
+    .container {
         width: 100vw;
         height: 100vh;
 
         display: flex;
         align-items: center;
         flex-direction: column;
-        background:url('../../public/background.png') no-repeat;
+        justify-content: center;
+        background: url('../../public/background.png') no-repeat;
         background-size: cover;
 
-        .text{
+        .text {
             width: 100%;
             display: flex;
             justify-content: center;
@@ -22,18 +26,17 @@
             flex-direction: column;
 
             text-align: center;
-            margin-top: 10em;
 
-            h1{
+            h1 {
                 color: #FFF;
 
-                strong{
+                strong {
                     color: #3ACF49;
                     font-weight: bold;
                 }
             }
 
-            p{
+            p {
                 text-align: center;
                 margin-top: 2em;
                 width: 70%;
@@ -41,7 +44,7 @@
             }
         }
 
-        .forms{
+        .forms {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -49,30 +52,41 @@
 
             width: 80%;
             height: 40%;
-            background-color: rgba(0,0,0,0.5);
-            margin-top: 3em; 
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 3em;
 
-            label{
+            label {
                 width: 80%;
                 text-align: left;
                 color: #FFF;
                 font-family: "Inter", sans-serif;
                 margin-top: 0.5em;
+
+                span {
+                    color: #3ACF49;
+                }
             }
 
-            input{
+            input {
                 width: 80%;
                 margin-top: 0.5em;
                 border: none;
-                height: 7%;
-                border-radius: 3;
+                height: 8%;
+                border-radius: 3%;
             }
 
-            input:focus{
+            input:focus {
                 border: 1px solid #3ACF49;
             }
 
-            button{
+            input[type="file"] {
+                background-color: #FFF;
+                padding: 3%;
+                width: 75%;
+                border-radius: 3%;
+            }
+
+            button {
                 border: none;
                 background-color: #3ACF49;
                 color: #FFF;
@@ -88,27 +102,322 @@
 
 //MEDIA QUERIES
 
-//Celular
-@media (max-width: 599px) {
-    .initialPage {}
+@media(max-width: 360px) {
+    .sendPage {
+        p {
+            width: 90%;
+        }
+
+        .container {
+            .text {
+                h1 {
+                    font-size: 1.5em;
+                }
+
+                p {
+                    width: 85%;
+                }
+            }
+
+            .forms {
+                label {
+                    font-size: 0.85em;
+
+                    span {
+                        font-size: 0.85em;
+                    }
+                }
+
+                button {
+                    font-size: 0.85em
+                }
+            }
+
+        }
+    }
 }
+
+@media(max-height: 667px) {
+    .sendPage {
+        p{
+            width: 90%;
+        }
+
+        .container {
+            .text {
+                h1 {
+                    font-size: 1.5em;
+                }
+            }
+
+            .forms {
+                label {
+                    font-size: 0.85em;
+
+                    span {
+                        font-size: 0.85em;
+                    }
+                }
+
+                button {
+                    font-size: 0.85em
+                }
+            }
+
+        }
+    }
+
+    @media(max-width: 280px) {
+        .sendPage {
+
+            p {
+                font-size: 0.85em;
+                width: 90%;
+            }
+
+            .container {
+                .text {
+                    h1 {
+                        font-size: 1.25em;
+                    }
+
+                    p {
+                        font-size: 0.9em;
+                        width: 85%;
+                    }
+                }
+
+                .forms {
+                    label {
+                        font-size: 0.85em;
+
+                        span {
+                            font-size: 0.85em;
+                        }
+                    }
+
+                    button {
+                        font-size: 0.85em
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@media(min-width: 540px) {
+    .sendPage {
+
+        p {
+            font-size: 1em;
+            width: 90%;
+        }
+
+        .container {
+            justify-content: center;
+
+            .text {
+                h1 {
+                    font-size: 1.5em;
+                }
+
+                p {
+                    font-size: 1.05em;
+                }
+            }
+
+            .forms {
+                height: 50%;
+
+                label {
+                    font-size: 0.9em
+                }
+
+                input {
+                    font-size: 0.9em;
+                    height: 8%;
+                }
+
+
+                button {
+                    font-size: 1em;
+                    padding: 2.5%;
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width: 599px) {}
 
 //Tablet pequeno
 @media(min-width: 600px) {
-    .initialPage {}
+    .sendPage {
+
+        p {
+            font-size: 1.35em;
+            width: 90%;
+        }
+
+        .container {
+            justify-content: center;
+
+            .text {
+                h1 {
+                    font-size: 2em;
+                }
+
+                p {
+                    font-size: 1.35em;
+                }
+            }
+
+            .forms {
+                height: 50%;
+
+                label {
+                    font-size: 1.25em
+                }
+
+                input {
+                    font-size: 1.35em;
+                    height: 8%;
+                }
+
+
+                button {
+                    font-size: 1.35em;
+                    padding: 3%;
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .sendPage {
+        .container {
+            .text {
+                margin-top: 2em;
+            }
+        }
+    }
 }
 
 //Tablet grande
-@media(min-width: 900px) {
-    .initialPage {}
+@media(min-width: 900px) {}
+
+@media(min-width: 1024px) {
+    .sendPage {    
+
+        p{
+            font-size: 1em;
+        }
+
+        .container {
+            .text {
+                margin-top: 1.5em;
+
+                h1 {
+                    font-size: 1.5em;
+                }
+    
+                p {
+                    font-size: 1em;
+                }
+            }
+    
+            .forms {
+               width: 50%;
+    
+                label {
+                    font-size: 0.9em;
+                }
+    
+                input {
+                    font-size: 0.9em;
+                }
+    
+                button {
+                    font-size: 0.9em;
+                }
+            }
+    
+        }
+    }
 }
 
 //Desktop
 @media(min-width: 1200px) {
-    .initialPage {}
+    .sendPage {    
+        .container {
+            .text {
+                h1 {
+                   font-size: 1.8em;
+                }
+    
+                p {
+                    font-size: 1.2em;
+                }
+            }
+    
+            .forms {
+    
+                label {
+                   font-size: 1em;
+                }
+    
+                input {
+                    font-size: 1em;
+                }
+    
+                button {
+                    font-size: 1em;
+                    padding: 2.5%;
+                }
+            }
+    
+        }
+    }
+    
 }
 
 //Desktop grande
 @media(min-width: 1800px) {
-    .initialPage {}
+    .sendPage {    
+        .container {
+            .text {
+                h1 {
+                   font-size: 2em;
+                }
+    
+                p {
+                    font-size: 1.4em;
+                }
+            }
+    
+            .forms {
+    
+                label {
+                   font-size: 1.2em;
+                }
+    
+                input {
+                    font-size: 1.2em;
+                }
+    
+                button {
+                    font-size: 1.2em;
+                    padding: 2.5%;
+                }
+            }
+    
+        }
+    }
 }
+
+@media(min-width: 2000px) {}

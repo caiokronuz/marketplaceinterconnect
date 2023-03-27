@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     background-color: rgba(0, 0, 0, 0.6);
 
@@ -70,6 +70,14 @@
         img {
             width: 30%;
             height: 50%;
+        }
+    }
+
+    @media(max-width: 280px){
+        .header{
+            img{
+                width: 40%;
+            }
         }
     }
 }

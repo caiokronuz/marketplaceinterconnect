@@ -16,11 +16,11 @@ export default function sendPage() {
                     <p>Iremos analisar seu consumo e te retornaremos com um proposta. Sem compromisso nenhum!</p>
                 </div>
                 <form className={styles.forms}>
-                    <label htmlFor="name">Nome*</label>
-                    <input type="text" id="name" placeholder="Fulano da Silva"/>
-                    <label htmlFor="contact">Telefone*</label>
-                    <input type="text" id="contact" placeholder="(85) 99999-9999)"/>
-                    <label htmlFor="bill">Conta de energia*</label>
+                    <label htmlFor="name">Nome <span>*</span></label>
+                    <input type="text" id="name" placeholder="Fulanésio Beltranosil da Silva"/>
+                    <label htmlFor="contact">Telefone <span>*</span></label>
+                    <input type="text" id="contact" placeholder="(85) 99999-9999"/>
+                    <label htmlFor="bill">Conta de energia <span>*</span></label>
                     <input type="file" id="bill"/>
                     <button type="submit">Quero economizar</button>
                 </form>
