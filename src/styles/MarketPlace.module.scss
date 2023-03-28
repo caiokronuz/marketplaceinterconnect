@@ -1,9 +1,14 @@
-.marketPlace{
+.marketPlace {
     width: 100vw;
     height: auto;
     background: linear-gradient(#3ACF49, #3E74FF);
 
-    .page{
+    p {
+        margin: 1em 0 1em 0;
+        width: 90%;
+    }
+
+    .page {
         width: 100vw;
         height: auto;
 
@@ -13,8 +18,8 @@
         background: url('../../public/background.png') no-repeat;
         background-size: cover;
 
-        .container{
-            background: rgba(0,0,0,0.5);
+        .container {
+            background: rgba(0, 0, 0, 0.5);
             width: 90%;
             height: auto;
 
@@ -23,10 +28,10 @@
             align-items: center;
             flex-direction: column;
 
-            margin-top: 8em;
+            margin: 8em 0 8em 0;
             padding: 5%;
 
-            form{
+            form {
                 width: 100%;
                 height: 100%;
 
@@ -35,24 +40,33 @@
                 align-items: center;
                 flex-direction: column;
 
-                input{
+                input {
                     width: 80%;
                     padding: 0.5em;
                     margin-top: 0.2em;
                 }
 
-                button{
+                button {
                     width: 85%;
                     margin-top: 0.2em;
                     padding: 0.5em;
-                    
+
                     color: #FFF;
                     background-color: #3E74FF;
                     border: none;
+                    cursor: pointer;
                 }
             }
 
-            .quotas{
+            .containerTitle {
+                color: #3ACF49;
+                font-weight: bold;
+                text-align: center;
+                font-size: 1.2em;
+                margin-top: 2em;
+            }
+
+            .quotasContainer {
                 width: 100%;
                 height: 100%;
 
@@ -61,76 +75,90 @@
                 align-items: center;
                 flex-direction: column;
 
-                margin: 0.5em 0 2em 0;
 
-                .solarPlant{
-                    background-color: #FFF;
-                    width: 90%;
-                    border-radius: 2%;
-                    margin-top: 1.5em;
+                .quotas {
+                    width: 100%;
+                    height: 100%;
 
-                    header{
-                        img{
-                            width: 100%;
-                            height: 10%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
 
-                            border-top-left-radius: 2%;
-                            border-top-right-radius: 2%;
-                        }
-                    }
+                    margin: 0.5em 0 2em 0;
 
-                    .description{
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
+                    .solarPlant {
+                        background-color: #FFF;
+                        width: 90%;
+                        border-radius: 2%;
+                        margin-top: 1.5em;
 
-                        padding: 3%;
+                        header {
+                            img {
+                                width: 100%;
+                                height: 10%;
 
-                        .title{
-                            color: #3ACF49;
-                            font-weight: bold;
-                        }
-
-                        .amountQuotes{
-                            margin-top: 0.5em;
-                            color: #D9D9D9;
-                        }
-
-                        hr{
-                            width: 50%;
-                            margin: 1em 0 1em 0;
-                        }
-
-                        .amountControl{
-                            width: 50%;
-                            margin: 1em 0 1em 0;
-
-                            display: flex;
-                            justify-content: space-evenly;
-                            align-items: center;
-
-                            color: #D9D9D9;
-
-                            span:first-child, span:last-child{
-                                color: #000;
+                                border-top-left-radius: 2%;
+                                border-top-right-radius: 2%;
                             }
                         }
 
-                        button{
-                            width: 50%;
-                            padding: 1em;
-                            margin: 1em 0 1em 0;
+                        .description {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
 
-                            border: none;
-                            color: #FFF;
-                            background-color: #3ACF49;
-                            border-radius: 3%;
+                            padding: 3%;
+
+                            .title {
+                                color: #3ACF49;
+                                font-weight: bold;
+                                font-size: 1.3em;
+                                text-align: center;
+                            }
+
+                            .amountQuotes {
+                                margin-top: 0.5em;
+                                color: #D9D9D9;
+                            }
+
+                            hr {
+                                width: 50%;
+                                margin: 1em 0 1em 0;
+                            }
+
+                            .amountControl {
+                                width: 50%;
+                                margin: 1em 0 1em 0;
+
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+
+                                color: #D9D9D9;
+
+                                span:first-child,
+                                span:last-child {
+                                    color: #000;
+                                }
+                            }
+
+                            button {
+                                width: 50%;
+                                padding: 1em;
+                                margin: 1em 0 1em 0;
+
+                                border: none;
+                                color: #FFF;
+                                background-color: #3ACF49;
+                                border-radius: 3%;
+                            }
                         }
-                    }
 
+                    }
                 }
             }
         }
@@ -140,27 +168,262 @@
 
 //MEDIA QUERIES
 
-//Celular
-@media (max-width: 599px) {
-    .initialPage {}
+@media(max-width: 360px) {}
+
+@media(max-height: 667px) {
+    @media(max-width: 280px) {}
 }
+
+@media(min-width: 540px) {}
+
+@media(max-width: 599px) {}
 
 //Tablet pequeno
 @media(min-width: 600px) {
-    .initialPage {}
+    .marketPlace {
+        p {
+            font-size: 1.5em;
+        }
+
+        .page {
+            .container {
+                form {
+                    flex-direction: row;
+
+                    input {
+                        width: 18%;
+                        margin: 0;
+                        margin-right: 0.5em;
+                        font-size: 1em;
+                    }
+
+                    button {
+                        width: 25%;
+                        margin: 0;
+                        padding: 0.6em;
+                        font-size: 1em;
+                    }
+                }
+
+                .containerTitle {
+                    font-size: 1.5em
+                }
+
+                .quotasContainer {
+
+                    .quotas {
+                        width: 90%;
+
+                        .solarPlant {
+                            .description {
+                                .title {
+                                    font-size: 2em;
+                                }
+
+                                .amountQuotes {
+                                    font-size: 1.5em;
+                                }
+
+                                .amountControl {
+                                    span {
+                                        font-size: 1.5em;
+                                    }
+                                }
+
+                                button {
+                                    font-size: 1em;
+                                    width: 30%;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 }
+
+@media(max-width: 768px) {}
 
 //Tablet grande
 @media(min-width: 900px) {
-    .initialPage {}
+    .marketPlace {
+        .page {
+            .container {
+                margin-top: 10em;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .marketPlace {
+        .page {
+            .container {
+                form {
+                    input {
+                        font-size: 0.8em;
+                    }
+
+                    button {
+                        font-size: 0.8em;
+                    }
+                }
+
+                .quotasContainer {
+                    flex-direction: row;
+
+                    .quotas {
+                        .solarPlant {
+                            margin-top: 1em;
+
+                            .description {
+                                .title {
+                                    font-size: 1.2em;
+                                }
+
+                                .amountQuotes {
+                                    font-size: 1em;
+                                }
+
+                                .amountEnergy {
+                                    font-size: 1.2em;
+                                }
+
+                                .amountControl {
+                                    span {
+                                        font-size: 0.8em;
+                                    }
+                                }
+
+                                button {
+                                    font-size: 0.7em;
+                                    width: 50%;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 }
 
 //Desktop
 @media(min-width: 1200px) {
-    .initialPage {}
+    .marketPlace {
+        .page {
+            .container {
+                form {
+                    input {
+                        width: 15%;
+                    }
+
+                    button {
+                        width: 18%;
+                    }
+                }
+
+                .quotasContainer {
+                    flex-direction: row;
+
+                    .quotas {
+                        .solarPlant {
+                            margin-top: 1em;
+
+                            .description {
+                                .title {
+                                    font-size: 1.2em;
+                                }
+
+                                .amountQuotes {
+                                    font-size: 1em;
+                                }
+
+                                .amountEnergy {
+                                    font-size: 1.2em;
+                                }
+
+                                .amountControl {
+                                    span {
+                                        font-size: 0.8em;
+                                    }
+                                }
+
+                                button {
+                                    font-size: 0.7em;
+                                    width: 50%;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 }
 
 //Desktop grande
 @media(min-width: 1800px) {
-    .initialPage {}
+    .marketPlace {
+        .page {
+            .container {
+                form {
+                    input {
+                        width: 10%;
+                        font-size: 1em;
+                    }
+
+                    button {
+                        width: 12%;
+                        font-size: 1em;
+                    }
+                }
+
+                .quotasContainer {
+                    flex-direction: row;
+                    .quotas {
+                        .solarPlant {
+                            margin-top: 1em;
+
+                            .description {
+                                .title {
+                                    font-size: 1.5em;
+                                }
+
+                                .amountQuotes {
+                                    font-size: 1.2em;
+                                }
+
+                                .amountEnergy{
+                                    font-size: 1.4em;
+                                }
+
+                                .amountControl {
+                                    span{
+                                        font-size: 1em;
+                                    }
+                                }
+
+                                button {
+                                    font-size: 1em;
+                                    width: 50%;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 }
+
+@media(min-width: 2000px) {}
