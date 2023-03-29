@@ -93,11 +93,20 @@
 @media (max-width: 599px) {}
 
 //Tablet pequeno
-@media(min-width: 600px) {
+@media(min-width: 717px){
+    .header {
+        img {
+            width: 20%;
+            height: 80%;
+        }
+    }
+}
+
+@media(min-width: 768px) {
     .header {
         img {
             width: 30%;
-            height: 50%;
+            height: 60%;
         }
     }
 }

@@ -92,8 +92,44 @@
 
 @media(max-width: 599px) {}
 
+@media(min-width: 717px) {
+    .marketPlace {
+        p {
+            font-size: 0.9em;
+            width: 85%;
+        }
+
+        .page {
+            .container {
+                form {
+                    flex-direction: row;
+
+                    input {
+                        width: 18%;
+                        margin: 0;
+                        margin-right: 0.5em;
+                        font-size: 0.9em;
+                    }
+
+                    button {
+                        width: 25%;
+                        margin: 0;
+                        padding: 0.6em;
+                        font-size: 0.9em;
+                    }
+                }
+
+                .containerTitle {
+                    font-size: 1.4em
+                }
+            }
+
+        }
+    }
+}
+
 //Tablet pequeno
-@media(min-width: 600px) {
+@media(min-width: 768px) {
     .marketPlace {
         p {
             font-size: 1.5em;
@@ -127,8 +163,6 @@
         }
     }
 }
-
-@media(max-width: 768px) {}
 
 //Tablet grande
 @media(min-width: 900px) {

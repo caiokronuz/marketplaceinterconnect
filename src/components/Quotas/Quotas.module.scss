@@ -84,7 +84,41 @@
     }
 }
 
-@media(min-width: 600px){
+@media(min-width: 717px){
+    .quotas {
+        width: 80%;
+
+        .solarPlant {
+            .description {
+                .title {
+                    font-size: 1.4em;
+                }
+
+                .amountEnergy{
+                    font-size: 1.4em;
+                }
+
+                .amountQuotes {
+                    font-size: 1em;
+                }
+
+                .amountControl {
+                    span {
+                        font-size: 0.9em;
+                    }
+                }
+
+                button {
+                    font-size: 0.9em;
+                    width: 30%;
+                }
+            }
+
+        }
+    }
+}
+
+@media(min-width: 768px){
     .quotas {
         width: 90%;
 

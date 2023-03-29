@@ -100,7 +100,30 @@
 }
 
 //Tablet pequeno
-@media(min-width: 600px) {
+@media(min-width: 717px) {
+    .footer {
+        
+        .top {
+            img {
+                width: 20%;
+            }
+        }
+    
+        .container {
+            .social {
+                .title{
+                    font-size: 1.4em;
+                }
+
+                .link{
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
     .footer {
         
         .top {
@@ -122,6 +145,7 @@
         }
     }
 }
+
 
 //Tablet grande
 @media(min-width: 900px) {

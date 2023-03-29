@@ -787,8 +787,111 @@
 
 @media(max-width: 599px) {}
 
+@media(min-width: 717px){
+    .initialPage {    
+        //Landing
+        .landing {
+            h1 {
+                font-size: 1.4em;
+            }
+    
+            .secondText {
+                margin: 0;
+            }
+    
+            .points {    
+                div {
+                    span {
+                        font-size: 1em;
+                    }
+                }
+    
+            }
+    
+            .link {
+                font-size: 0.9em;
+                width: 22%;
+            }
+        }
+    
+        //Como funciona?
+        .howWorks {
+            h1 {
+                font-size: 1.4em;
+            }
+    
+            .container {
+    
+                flex-direction: row;
+    
+    
+                iframe {
+                    height: 50%;
+                }
+    
+                .explanation {
+                    margin: 0;
+    
+                    p {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+    
+            a {
+                font-size: 0.9em;
+                width: 25%;
+            }
+    
+        }
+    
+        //Passos
+        .steps {
+            h1 {
+                font-size: 1.4em;
+            }
+    
+            .container {
+                align-items: flex-start;
+                flex-direction: row;
+            }
+    
+        }
+    
+        //Perguntas frequentes
+        .commonQuestions {    
+            h1 {
+                margin-bottom: 2em;
+            }
+    
+            .questionsComponent {
+                .questionComponent {
+                    .question {
+                        h1 {
+                            font-size: 1.05em;
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    
+        //Contato
+        .contact {
+            h1 {
+                font-size: 1.4em;
+            }
+    
+            .whatsAppButton {
+               width: 35%;
+            }
+        }
+    }   
+}
+
 //Tablet pequeno
-@media(min-width: 600px) {
+@media(min-width: 768px) {
     .initialPage {
 
         //Landing
@@ -819,6 +922,9 @@
             }
 
             .container {
+                flex-direction: column;
+                justify-content: space-evenly;
+
                 iframe {
                     width: 80%;
                     height: 40%;
@@ -845,8 +951,10 @@
             }
 
             .container {
+                flex-direction: column;
+                align-items: center;
                 .step {
-                    margin-top: 1em;
+                    margin-top: 1.5em;
 
                     p {
                         font-size: 1.4em;
@@ -901,6 +1009,7 @@
         }
     }
 }
+
 
 //Tablet grande
 @media(min-width: 900px) {

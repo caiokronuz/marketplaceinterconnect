@@ -253,8 +253,58 @@
 
 @media(max-width: 599px) {}
 
+@media(min-width: 717px) {
+    .sendPage {
+
+        p {
+            font-size: 0.9em;
+            width: 90%;
+        }
+
+        .container {
+            justify-content: center;
+
+            .text {
+                margin-top: 5em;
+
+                h1 {
+                    font-size: 1.4em;
+                }
+
+                p {
+                    font-size: 0.9em;
+                    margin-top: 1em;
+                }
+            }
+
+            .forms {
+                height: 75%;
+                padding: 1.5%;
+                margin-bottom: 2em;
+                width: 60%;
+
+                label {
+                    font-size: 0.9em
+                }
+
+                input {
+                    font-size: 0.9em;
+                    height: 8%;
+                }
+
+
+                button {
+                    font-size: 0.9em;
+                    padding: 2%;
+                }
+            }
+
+        }
+    }
+}
+
 //Tablet pequeno
-@media(min-width: 600px) {
+@media(min-width: 768px) {
     .sendPage {
 
         p {
@@ -277,6 +327,7 @@
 
             .forms {
                 height: 50%;
+                width: 90%;
 
                 label {
                     font-size: 1.25em
@@ -294,16 +345,6 @@
                 }
             }
 
-        }
-    }
-}
-
-@media(max-width: 768px) {
-    .sendPage {
-        .container {
-            .text {
-                margin-top: 2em;
-            }
         }
     }
 }
