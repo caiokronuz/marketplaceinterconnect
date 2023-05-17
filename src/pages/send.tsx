@@ -24,7 +24,10 @@ export default function sendPage() {
 
                     <div className={styles.sliderCounter}>
                         <p>Qual valor médio da sua conta de luz?</p>
-                        <span>R$<p>{billValue},00</p></span>
+                        <div>
+                            <span>R$</span>
+                            <p>{billValue},00</p>
+                        </div>
                         <input type="range" min="200" max="2000"  value={billValue} onChange={e => setBillValue(Number(e.target.value)) }/>
                     </div>
                     
@@ -35,7 +38,10 @@ export default function sendPage() {
 
                     <div className={styles.result}>
                         <p>Em um ano sua economia será de:</p>
-                        <span>R$<p>{Math.floor((billValue - (billValue * 0.15)) * 12)},00</p></span>
+                        <div>
+                            <span>R$</span>
+                            <p>{Math.floor((billValue - (billValue * 0.15)) * 12)},00</p>
+                        </div>
                         <button type="submit">Quero economizar</button>
                     </div>
                 </form>

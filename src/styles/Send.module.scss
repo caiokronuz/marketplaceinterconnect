@@ -51,25 +51,65 @@
             flex-direction: column;
 
             width: 80%;
-            height: 40%;
+            height: 50%;
             background-color: rgba(0, 0, 0, 0.5);
             margin-top: 3em;
 
             .sliderCounter{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                width: 100%;
+                height: auto;
+
+
                 p{
                     color: #FFF;
+                    margin: 1em 0 0.5em 0;
+                    padding: 0;
                 }
 
-                span{
-                    margin:0;
-                    padding: 0;
+                div{
                     display: flex;
-                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
 
-                    font-size: 1em;
+                    margin-bottom: 1em;
+                    
                     p{
+                        margin: 0;
                         font-size: 2em;
+                        font-weight: bold;
                     }
+
+                    span{
+                        font-weight: lighter;
+                        color: #fff;
+                    }
+                }
+
+                input{
+                    margin-bottom: 1.5em;
+                    -webkit-appearance: none;
+                    background: #969191;
+                    outline: none;
+                    width: 60%;
+                    height: 10px;
+                    border-radius: 9px;   
+                }
+
+                input::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%; 
+                
+                    background: #3ACF49;
+                    cursor: pointer;
                 }
             }
 
@@ -104,14 +144,36 @@
                 border-radius: 3%;
             }
 
-            button {
-                border: none;
-                background-color: #3ACF49;
-                color: #FFF;
-                margin: 2em 0 0 0;
-                padding: 4%;
-                border-radius: 3%;
-                font-size: 0.9em;
+            .result{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                background: #FFF;
+
+                margin-top: 1.5em;
+
+                p{
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                button {
+                    border: none;
+                    background-color: #3ACF49;
+                    color: #FFF;
+                    margin: 1em 0 1em 0;
+                    padding: 4%;
+                    border-radius: 3%;
+                    font-size: 0.9em;
+                }
             }
         }
 
