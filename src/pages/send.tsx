@@ -28,7 +28,7 @@ export default function sendPage() {
                             <span>R$</span>
                             <p>{billValue},00</p>
                         </div>
-                        <input type="range" min="200" max="2000"  value={billValue} onChange={e => setBillValue(Number(e.target.value)) }/>
+                        <input type="range" min="200" max="2000" step={50} value={billValue} onChange={e => setBillValue(Number(e.target.value)) }/>
                     </div>
                     
                     <label htmlFor="name">Nome <span>*</span></label>

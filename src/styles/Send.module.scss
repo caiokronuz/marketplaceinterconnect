@@ -51,11 +51,12 @@
             flex-direction: column;
 
             width: 80%;
-            height: 50%;
+            height: auto;
             background-color: rgba(0, 0, 0, 0.5);
             margin-top: 3em;
+            border-radius: 5px;
 
-            .sliderCounter{
+            .sliderCounter {
 
                 display: flex;
                 justify-content: center;
@@ -66,39 +67,40 @@
                 height: auto;
 
 
-                p{
+                p {
                     color: #FFF;
                     margin: 1em 0 0.5em 0;
                     padding: 0;
                 }
 
-                div{
+                div {
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
                     margin-bottom: 1em;
                     
-                    p{
+                    p {
                         margin: 0;
                         font-size: 2em;
                         font-weight: bold;
                     }
 
-                    span{
+                    span {
                         font-weight: lighter;
                         color: #fff;
                     }
                 }
 
-                input{
+                input {
                     margin-bottom: 1.5em;
                     -webkit-appearance: none;
                     background: #969191;
                     outline: none;
                     width: 60%;
                     height: 10px;
-                    border-radius: 9px;   
+                    border-radius: 9px;
+                    padding: 0;
                 }
 
                 input::-webkit-slider-thumb {
@@ -106,8 +108,8 @@
                     appearance: none;
                     width: 25px;
                     height: 25px;
-                    border-radius: 50%; 
-                
+                    border-radius: 50%;
+
                     background: #3ACF49;
                     cursor: pointer;
                 }
@@ -129,22 +131,15 @@
                 width: 80%;
                 margin-top: 0.5em;
                 border: none;
-                height: 8%;
-                border-radius: 3%;
+                padding: 2%;
+                border-radius: 3px;
             }
 
             input:focus {
                 border: 1px solid #3ACF49;
             }
 
-            input[type="file"] {
-                background-color: #FFF;
-                padding: 3%;
-                width: 75%;
-                border-radius: 3%;
-            }
-
-            .result{
+            .result {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -152,26 +147,42 @@
 
                 background: #FFF;
 
-                margin-top: 1.5em;
+                margin: 1.5em 0 1.5em 0;
+                padding: 3%;
+                border: 1px solid #000000;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 3px;
 
-                p{
-                    margin: 0;
+                p {
+                    margin: 0 0 0.5em 0;
                     padding: 0;
                 }
-                
-                div{
+
+                div {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    p {
+                        margin: 0;
+                        font-size: 2em;
+                        font-weight: bold;
+                        color: #5A5A5A;
+                    }
+
+                    span {
+                        font-weight: lighter;
+                        color: #5A5A5A;
+                    }
                 }
 
                 button {
                     border: none;
                     background-color: #3ACF49;
                     color: #FFF;
-                    margin: 1em 0 1em 0;
+                    margin: 1em 0 0 0;
                     padding: 4%;
-                    border-radius: 3%;
+                    border-radius: 5px;
                     font-size: 0.9em;
                 }
             }
@@ -219,28 +230,94 @@
 
 @media(max-height: 667px) {
     .sendPage {
-        p{
+        p {
             width: 90%;
         }
 
         .container {
             .text {
                 h1 {
-                    font-size: 1.5em;
+                    font-size: 1.25em;
+                    margin-top: 4em;
+                }
+
+                p{
+                    margin-top: 1em;
+                    width: auto;
                 }
             }
 
             .forms {
-                label {
-                    font-size: 0.85em;
 
-                    span {
-                        font-size: 0.85em;
+                margin-top: 1em;
+
+                .sliderCounter{
+    
+                    p {
+                        font-size: 0.9em;
+                        text-align: center;
+                        margin: 0.5em 0 0.5em 0;
+                    }
+    
+                    div {
+                        p {
+                            font-size: 1.5em;
+                        }
+                    }
+    
+                    input {
+                        margin-bottom: 1em;
+                        height: 5px;
+                    }
+    
+                    input::-webkit-slider-thumb {
+                        width: 20px;
+                        height: 20px;   
                     }
                 }
+    
+                label{
+                    font-size: 0.85em;
+                }
 
-                button {
-                    font-size: 0.85em
+                input{
+                    height: 1em;
+                }
+
+                .result {
+                    margin: 1em 0 1em 0;
+                    padding: 0.5em;
+                    width: 85%;
+    
+                    p {
+                        margin: 0 0 0.5em 0;
+                        padding: 0;
+                        font-size: 0.9em;
+                        width: auto;
+                        text-align: center;
+                    }
+    
+                    div {
+    
+                        p {
+                            font-size: 1.5em;
+                        }
+    
+                        span {
+                            font-weight: lighter;
+                            color: #5A5A5A;
+                        }
+                    }
+    
+                    button {
+                        border: none;
+                        background-color: #3ACF49;
+                        color: #FFF;
+                        margin: 0.5em 0 0 0;
+                        padding: 4%;
+                        border-radius: 5px;
+                        font-size: 0.9em;
+                    }
                 }
             }
 
@@ -433,9 +510,9 @@
 @media(min-width: 900px) {}
 
 @media(min-width: 1024px) {
-    .sendPage {    
+    .sendPage {
 
-        p{
+        p {
             font-size: 1em;
         }
 
@@ -446,97 +523,97 @@
                 h1 {
                     font-size: 1.5em;
                 }
-    
+
                 p {
                     font-size: 1em;
                 }
             }
-    
+
             .forms {
-               width: 50%;
-    
+                width: 50%;
+
                 label {
                     font-size: 0.9em;
                 }
-    
+
                 input {
                     font-size: 0.9em;
                 }
-    
+
                 button {
                     font-size: 0.9em;
                 }
             }
-    
+
         }
     }
 }
 
 //Desktop
 @media(min-width: 1200px) {
-    .sendPage {    
+    .sendPage {
         .container {
             .text {
                 h1 {
-                   font-size: 1.8em;
+                    font-size: 1.8em;
                 }
-    
+
                 p {
                     font-size: 1.2em;
                 }
             }
-    
+
             .forms {
-    
+
                 label {
-                   font-size: 1em;
+                    font-size: 1em;
                 }
-    
+
                 input {
                     font-size: 1em;
                 }
-    
+
                 button {
                     font-size: 1em;
                     padding: 2.5%;
                 }
             }
-    
+
         }
     }
-    
+
 }
 
 //Desktop grande
 @media(min-width: 1800px) {
-    .sendPage {    
+    .sendPage {
         .container {
             .text {
                 h1 {
-                   font-size: 2em;
+                    font-size: 2em;
                 }
-    
+
                 p {
                     font-size: 1.4em;
                 }
             }
-    
+
             .forms {
-    
+
                 label {
-                   font-size: 1.2em;
+                    font-size: 1.2em;
                 }
-    
+
                 input {
                     font-size: 1.2em;
                 }
-    
+
                 button {
                     font-size: 1.2em;
                     padding: 2.5%;
                 }
             }
-    
+
         }
     }
 }
