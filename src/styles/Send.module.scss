@@ -203,19 +203,46 @@
             .text {
                 h1 {
                     font-size: 1.5em;
+                    margin-top: 3em;
                 }
 
                 p {
                     width: 85%;
+                    padding: 0;
+                    margin-top: 0.5em;
                 }
             }
 
             .forms {
+                margin: 0;
+                padding: 0;
+
+                .sliderCounter{
+                    p{
+                        font-size: 0.9em;
+                        text-align: center;
+                        margin-bottom: 1em;
+                    }
+
+                    input{
+                        height: 0.8em;
+                    }
+                }
+
                 label {
                     font-size: 0.85em;
 
                     span {
                         font-size: 0.85em;
+                    }
+                }
+
+                .result{
+                    width: 90%;
+
+                    p{
+                        font-size: 0.9em;
+                        text-align: center;
                     }
                 }
 
@@ -236,6 +263,7 @@
 
         .container {
             .text {
+                width: 90%;
                 h1 {
                     font-size: 1.25em;
                     margin-top: 4em;
@@ -364,6 +392,29 @@
     }
 }
 
+@media(min-width: 390px){
+    .sendPage {
+
+        .container {
+
+            .text {
+                h1 {
+                    margin-top: 1.5em;
+                }
+
+                p {
+                    margin-top: 1em;
+                }
+            }
+
+            .forms {
+                margin-top: 1em;
+            }
+
+        }
+    }
+}
+
 @media(min-width: 540px) {
     .sendPage {
 
@@ -377,30 +428,58 @@
 
             .text {
                 h1 {
-                    font-size: 1.5em;
+                    font-size: 1.25em;
+                    margin-top: 4em;
                 }
 
                 p {
-                    font-size: 1.05em;
+                    font-size: 1em;
                 }
             }
 
             .forms {
-                height: 50%;
+                height: auto;
+
+                .sliderCounter{
+                    p{
+                        font-size: 1em;
+                        text-align: center;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1.5em;
+                        }
+                        
+                        P{
+                            font-size: 2em;
+                        }
+                    }
+
+                    input{
+                        height: 0.5em;
+                    }
+                }
 
                 label {
-                    font-size: 0.9em
                 }
 
                 input {
-                    font-size: 0.9em;
-                    height: 8%;
+                    height: 4%;
                 }
 
+                .result{
 
-                button {
-                    font-size: 1em;
-                    padding: 2.5%;
+                    width: 85%;
+
+                    p{
+                        text-align: center;
+                    }
+
+                    button {
+                        font-size: 1.05em;
+                        padding: 2.5%;
+                    }
                 }
             }
 
@@ -422,37 +501,74 @@
             justify-content: center;
 
             .text {
-                margin-top: 5em;
+                margin: 0;
 
                 h1 {
-                    font-size: 1.4em;
+                    font-size: 1.15em;
                 }
 
                 p {
-                    font-size: 0.9em;
-                    margin-top: 1em;
+                    font-size: 0.85em;
+                    margin-top: 0.5em;
                 }
             }
 
             .forms {
-                height: 75%;
-                padding: 1.5%;
-                margin-bottom: 2em;
-                width: 60%;
+
+                margin-top: 0;
+                width: 70%;
+
+                .sliderCounter{
+                    p{
+                        font-size: 0.8em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1em;
+                        }
+                        p{
+                            font-size: 1.5em;
+                        }
+                    }
+
+                    input{
+                        width: 40%;
+                    }
+                }
 
                 label {
-                    font-size: 0.9em
+                    font-size: 0.75em;
+                    span{
+                        font-size: 1em;
+                    }
                 }
 
                 input {
-                    font-size: 0.9em;
-                    height: 8%;
+                    font-size: 0.75em;
+                    height: 1.05%;
                 }
 
 
-                button {
-                    font-size: 0.9em;
-                    padding: 2%;
+                .result{
+                    p{
+                        font-size: 0.8em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1em;
+                        }
+
+                        p{
+                            font-size: 1.5em;
+                        }
+                    }
+
+                    button {
+                        font-size: 0.75em;
+                        padding: 1.5%;
+                    }
                 }
             }
 
@@ -462,6 +578,136 @@
 
 //Tablet pequeno
 @media(min-width: 768px) {
+    @media(min-height: 1180px){
+        .sendPage {
+
+            p {
+                font-size: 1.35em;
+                width: 90%;
+            }
+    
+            .container {
+                justify-content: center;
+    
+                .text {
+                    h1 {
+                        font-size: 2em;
+                        margin: 0;
+                    }
+    
+                    p {
+                        font-size: 1.35em;
+                    }
+                }
+    
+                .forms {
+                    height: 50%;
+                    width: 90%;
+    
+                    .sliderCounter{
+                        width: 80%;
+                        margin-top: 1em;
+                        p{
+                            text-align: center;
+                        }
+                    }
+    
+                    label {
+                        font-size: 1.25em
+                    }
+    
+                    input {
+                        font-size: 1.35em;
+                        height: 8%;
+                        width: 75%;
+                    }
+    
+                    .result{
+                        width: 80%;
+    
+                        p{
+                            text-align: center;
+                        }
+
+                        button {
+                            font-size: 1em;
+                            padding: 3%;
+                        }
+                    }      
+                }
+    
+            }
+        }
+    }
+
+    @media(min-height: 1024px){
+        .sendPage {
+
+        p {
+            font-size: 1.35em;
+            width: 90%;
+        }
+
+        .container {
+            justify-content: center;
+
+            .text {
+                h1 {
+                    font-size: 2em;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 1.35em;
+                }
+            }
+
+            .forms {
+                height: 50%;
+                width: 90%;
+
+                .sliderCounter{
+                    width: 80%;
+                    margin-top: 5em;
+                    p{
+                        text-align: center;
+                    }
+                }
+
+                label {
+                    font-size: 1.25em
+                }
+
+                input {
+                    font-size: 1.35em;
+                    height: 8%;
+                    width: 75%;
+                }
+
+                .result{
+                    width: 80%;
+
+                    p{
+                        text-align: center;
+                    }
+
+                    button {
+                        font-size: 1.15em;
+                        padding: 3%;
+                    }
+                }
+
+
+               
+            }
+
+        }
+    }
+    }
+}
+
+//Tablet grande
+@media(min-width: 900px) {
     .sendPage {
 
         p {
@@ -478,13 +724,32 @@
                 }
 
                 p {
-                    font-size: 1.35em;
+                    font-size: 1.5em;
                 }
             }
 
             .forms {
                 height: 50%;
                 width: 90%;
+
+                .sliderCounter{
+
+                    margin: 0;
+
+                    p{
+                        font-size:1.75em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1.5em;
+                        }
+
+                        p{
+                            font-size: 2.5em;
+                        }
+                    }
+                }
 
                 label {
                     font-size: 1.25em
@@ -496,18 +761,17 @@
                 }
 
 
-                button {
-                    font-size: 1.35em;
-                    padding: 3%;
+                .result{
+                    button {
+                        font-size: 1.2em;
+                        padding: 3%;
+                    }
                 }
             }
 
         }
     }
 }
-
-//Tablet grande
-@media(min-width: 900px) {}
 
 @media(min-width: 1024px) {
     .sendPage {
@@ -518,19 +782,43 @@
 
         .container {
             .text {
-                margin-top: 1.5em;
+                margin-top: 4em;
 
                 h1 {
                     font-size: 1.5em;
+                    margin: 0;
                 }
 
                 p {
                     font-size: 1em;
+                    margin-top: 0.5em;
+                    margin-bottom: 1em;
                 }
             }
 
             .forms {
                 width: 50%;
+                height: auto;
+
+                .sliderCounter{
+                    p{
+                        font-size: 0.9em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1em;
+                        }
+
+                        p{
+                            font-size: 1.5em;
+                        }
+                    }
+
+                    input{
+                        width: 50%;
+                    }
+                }
 
                 label {
                     font-size: 0.9em;
@@ -538,10 +826,17 @@
 
                 input {
                     font-size: 0.9em;
+                    height: 3%;
                 }
 
-                button {
-                    font-size: 0.9em;
+                .result{
+                    p{
+                        font-size: 0.9em;
+                    }
+
+                    button {
+                        font-size: 0.9em;
+                    }
                 }
             }
 
@@ -565,6 +860,22 @@
 
             .forms {
 
+                .sliderCounter{
+                    p{
+                        font-size: 1.25em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1.2em;
+                        }
+
+                        p{
+                            font-size: 1.8em;
+                        }
+                    }
+                }
+
                 label {
                     font-size: 1em;
                 }
@@ -573,9 +884,25 @@
                     font-size: 1em;
                 }
 
-                button {
-                    font-size: 1em;
-                    padding: 2.5%;
+                .result{
+                    p{
+                        font-size: 1.25em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1.2em;
+                        }
+
+                        p{
+                            font-size: 1.8em;
+                        }
+                    }
+
+                    button {
+                        font-size: 1em;
+                        padding: 2.5%;
+                    }
                 }
             }
 
@@ -600,17 +927,52 @@
 
             .forms {
 
+                width: 45%;
+
+                .sliderCounter{
+                    p{
+                        font-size: 1.5em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1.8em;
+                        }
+
+                        p{
+                            font-size: 2.5em;
+                        }
+                    }
+                }
+
                 label {
                     font-size: 1.2em;
                 }
 
                 input {
                     font-size: 1.2em;
+                    height: 4%;
                 }
 
-                button {
-                    font-size: 1.2em;
-                    padding: 2.5%;
+                .result{
+                    p{
+                        font-size: 1.5em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1.8em;
+                        }
+
+                        p{
+                            font-size: 2.5em;
+                        }
+                    }
+
+                    button {
+                        font-size: 1.2em;
+                        padding: 2.5%;
+                    }
                 }
             }
 
@@ -618,4 +980,14 @@
     }
 }
 
-@media(min-width: 2000px) {}
+@media(min-width: 2000px) {
+    .sendPage {
+        .container {
+            .forms {
+                input {
+                    height: 2%;
+                }
+            }
+        }
+    }
+}
