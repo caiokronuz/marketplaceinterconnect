@@ -4,7 +4,7 @@ import { Footer } from '@/components/Footer/Footer';
 
 import styles from '../styles/Send.module.scss';
 
-export default function sendPage() {
+export default function SendPage() {
 
     const [billValue, setBillValue] = useState(200);
 
