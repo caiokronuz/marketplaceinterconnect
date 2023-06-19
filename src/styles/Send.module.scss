@@ -911,6 +911,78 @@
 
 }
 
+@media(min-width: 1300px){
+    .sendPage {
+        .container {
+            .text {
+                h1 {
+                    font-size: 1.8em;
+                }
+
+                p {
+                    font-size: 1.2em;
+                }
+            }
+
+            .forms {
+
+                width: 45%;
+
+                .sliderCounter{
+                    p{
+                        font-size: 1em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1em;
+                        }
+
+                        p{
+                            font-size: 1.5em;
+                        }
+                    }
+
+                    input{
+                        height: 0.4em;
+                    }
+                }
+
+                label {
+                    font-size: 1em;
+                }
+
+                input {
+                    font-size: 1.2em;
+                    height: 2%;
+                }
+
+                .result{
+                    p{
+                        font-size: 1em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1em;
+                        }
+
+                        p{
+                            font-size: 1.5em;
+                        }
+                    }
+
+                    button {
+                        font-size: 1em;
+                        padding: 2.5%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 //Desktop grande
 @media(min-width: 1800px) {
     .sendPage {
@@ -983,11 +1055,67 @@
 @media(min-width: 2000px) {
     .sendPage {
         .container {
-            .forms {
-                input {
-                    height: 2%;
+            .text {
+                h1 {
+                    font-size: 2em;
+                }
+
+                p {
+                    font-size: 1.4em;
                 }
             }
+
+            .forms {
+
+                width: 30%;
+
+                .sliderCounter{
+                    p{
+                        font-size: 1.2em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1.5em;
+                        }
+
+                        p{
+                            font-size: 2em;
+                        }
+                    }
+                }
+
+                label {
+                    font-size: 1.2em;
+                }
+
+                input {
+                    font-size: 1.2em;
+                    height: 3%;
+                }
+
+                .result{
+                    p{
+                        font-size: 1.5em;
+                    }
+
+                    div{
+                        span{
+                            font-size: 1.5em;
+                        }
+
+                        p{
+                            font-size: 2em;
+                        }
+                    }
+
+                    button {
+                        font-size: 1em;
+                        padding: 2.5%;
+                    }
+                }
+            }
+
         }
     }
 }
