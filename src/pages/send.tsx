@@ -7,6 +7,18 @@ import styles from '../styles/Send.module.scss';
 export default function SendPage() {
 
     const [billValue, setBillValue] = useState(200);
+    const [name, setName] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
+
+    function sendProposal(e: any){
+
+        e.preventDefault();
+
+        if(name == '' || phoneNumber == ''){
+            alert("Você não pode enviar uma proposta sem preencher seus dados.")
+        }
+
+    }
 
     return (
         <main className={styles.sendPage}>
@@ -20,7 +32,7 @@ export default function SendPage() {
                     <p>Iremos analisar seu consumo e te retornaremos com um proposta. Sem compromisso nenhum!</p>
                 </div>
 
-                <form className={styles.forms}>
+                <form className={styles.forms} onSubmit={sendProposal}>
 
                     <div className={styles.sliderCounter}>
                         <p>Qual valor médio da sua conta de luz?</p>
@@ -32,9 +44,9 @@ export default function SendPage() {
                     </div>
                     
                     <label htmlFor="name">Nome <span>*</span></label>
-                    <input type="text" id="name" placeholder="Fulanésio Beltranosil da Silva"/>
+                    <input type="text" id="name" placeholder="Fulanésio Beltranosil da Silva" onChange={e => setName(e.target.value)}/>
                     <label htmlFor="contact">Telefone <span>*</span></label>
-                    <input type="text" id="contact" placeholder="(85) 99999-9999"/>
+                    <input type="text" id="contact" placeholder="(85) 99999-9999" onChange={e => setPhoneNumber(e.target.value)}/>
 
                     <div className={styles.result}>
                         <p>Em um ano sua economia será de:</p>
