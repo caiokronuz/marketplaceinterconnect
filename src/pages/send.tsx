@@ -3,19 +3,33 @@ import { Header } from "@/components/Header/Header";
 import { Footer } from '@/components/Footer/Footer';
 
 import styles from '../styles/Send.module.scss';
+import api from '@/services/api';
 
 export default function SendPage() {
 
-    const [billValue, setBillValue] = useState(200);
+    const [billValue, setBillValue] = useState(2000);
     const [name, setName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
 
-    function sendProposal(e: any){
+    async function sendProposal(e: any){
 
         e.preventDefault();
 
-        if(name == '' || phoneNumber == ''){
+        if(!name||!phoneNumber){
             alert("Você não pode enviar uma proposta sem preencher seus dados.")
+        }
+
+        try{
+            await api.post('proposal',{
+                client_name: name,
+                client_phone: phoneNumber,
+                proposal_value: billValue
+            })
+
+            alert(`Proposta solicitada com sucesso. Aguarde e um de nossos especialistas irá entrar em contato com você!`)
+        }catch(err){
+            alert(err);
+            console.log(err);
         }
 
     }
@@ -40,7 +54,7 @@ export default function SendPage() {
                             <span>R$</span>
                             <p>{billValue},00</p>
                         </div>
-                        <input type="range" min="200" max="2000" step={50} value={billValue} onChange={e => setBillValue(Number(e.target.value)) }/>
+                        <input type="range" min="2000" max="20000" step={50} value={billValue} onChange={e => setBillValue(Number(e.target.value)) }/>
                     </div>
                     
                     <label htmlFor="name">Nome <span>*</span></label>
