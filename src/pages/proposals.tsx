@@ -1,6 +1,8 @@
 import api from "@/services/api"
 import { GetServerSideProps } from "next"
 
+import {ProposalModel} from '../components/Proposal/ProposalModel';
+
 interface Props{
     proposals: Proposal[]
 }
@@ -17,14 +19,9 @@ export default function ProposalsPage({proposals}: Props){
     return(
         <div>
             <main>
-                <h1>Propostas Recebidas</h1>
+                <h1>Essas são as propostas disponíveis</h1>
                 {proposals.map((proposal: Proposal)=> (
-                    <div>
-                        <p>{proposal.client_id}</p>
-                        <p>{proposal.client_name}</p>
-                        <p>{proposal.client_phone}</p>
-                        <p>{proposal.proposal_value}</p>
-                    </div>
+                    <ProposalModel proposal={proposal}/>
                 ))}
             </main>
         </div>
